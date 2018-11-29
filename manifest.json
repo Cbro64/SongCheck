@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "SongCheck",
+  "version": "0.1",
+  "background": {
+    "scripts": ["background.js"]
+  },
+	"content_scripts": [
+    {
+      "matches": [
+        "http://www.wsfm.com.au/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
+
